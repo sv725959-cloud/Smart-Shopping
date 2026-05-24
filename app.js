@@ -6,18 +6,23 @@ const supabaseClient = supabase.createClient(
   SUPABASE_ANON_KEY
 );
 
-// 👉 Screens
-const authScreen = document.getElementById("authScreen");
+// Screens
+const entryScreen = document.getElementById("entryScreen");
+const signupScreen = document.getElementById("signupScreen");
 const homePage = document.getElementById("homePage");
 
-// 👉 Skip Button
-document.getElementById("skipBtn").addEventListener("click", () => {
-  authScreen.style.display = "none";
-  homePage.classList.remove("hidden");
-});
+// Buttons
+document.getElementById("openSignup").onclick = () => {
+  entryScreen.classList.add("hidden");
+  signupScreen.classList.remove("hidden");
+};
 
-// 👉 Signup Button
-document.getElementById("signupBtn").addEventListener("click", async () => {
+document.getElementById("skipBtn").onclick = () => {
+  entryScreen.classList.add("hidden");
+  homePage.classList.remove("hidden");
+};
+
+document.getElementById("submitBtn").onclick = async () => {
 
   const name = document.getElementById("name").value;
   const mobile = document.getElementById("mobile").value;
@@ -37,8 +42,8 @@ document.getElementById("signupBtn").addEventListener("click", async () => {
     return;
   }
 
-  alert("Signup Success!");
+  alert("Success!");
 
-  authScreen.style.display = "none";
+  signupScreen.classList.add("hidden");
   homePage.classList.remove("hidden");
-});
+};
