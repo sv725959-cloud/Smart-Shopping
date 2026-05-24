@@ -1,21 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home - Deals</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LTA Shopping</title>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
+
 <body>
 
-<header>
-  <h2>🔥 Daily Deals</h2>
-  <a href="profile.html">Profile</a>
+<header class="top-header">
+  <div>
+    <h1>LTA Shopping</h1>
+    <p>Best Deals, Best Life</p>
+  </div>
+
+  <i class="fa-solid fa-bell"></i>
 </header>
 
-<div id="products"></div>
+<section class="banner">
+  <div class="banner-content">
+    <h2>UP TO 80% OFF</h2>
+    <p>On Top Brands</p>
 
-<script src="js/supabase.js"></script>
-<script src="js/products.js"></script>
-<script src="js/home.js"></script>
+    <a href="offers.html" class="shop-btn">
+      Shop Now
+    </a>
+  </div>
+</section>
+
+<section class="section-title">
+  <h2>Top Shopping Stores</h2>
+</section>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+    <h3>Amazon</h3>
+    <p>Up to 70% OFF</p>
+
+    <a href="https://amazon.in" target="_blank">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flipkart_logo.png">
+    <h3>Flipkart</h3>
+    <p>Up to 80% OFF</p>
+
+    <a href="https://flipkart.com" target="_blank">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Myntra_logo.png">
+    <h3>Myntra</h3>
+    <p>Fashion Deals</p>
+
+    <a href="https://myntra.com" target="_blank">
+      Shop Now
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png">
+    <h3>Meesho</h3>
+    <p>Best Prices</p>
+
+    <a href="https://meesho.com" target="_blank">
+      Shop Now
+    </a>
+  </div>
+
+</section>
+
+<nav class="bottom-nav">
+
+  <a href="index.html" class="active">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="categories.html">
+    <i class="fa-solid fa-layer-group"></i>
+    <span>Categories</span>
+  </a>
+
+  <a href="offers.html">
+    <i class="fa-solid fa-tags"></i>
+    <span>Offers</span>
+  </a>
+
+  <a href="profile.html">
+    <i class="fa-solid fa-user"></i>
+    <span>Account</span>
+  </a>
+
+</nav>
 
 </body>
 </html>
