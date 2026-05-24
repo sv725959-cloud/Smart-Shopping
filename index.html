@@ -1,62 +1,18 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Shopping</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SSAP - Welcome</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- 🔴 STEP 1: MAIN ENTRY -->
-<div id="entryScreen" class="center">
+<div class="container">
+  <h1>Smart Shopping Affiliate Platform</h1>
+  <p>Best Deals & Offers</p>
 
-  <h2>🛒 Smart Shopping</h2>
-
-  <button id="openSignup">Sign Up</button>
-  <button id="skipBtn">Skip</button>
-
+  <a href="signup.html" class="btn">Sign Up</a>
+  <a href="home.html" class="btn secondary">Skip</a>
 </div>
-
-<!-- 🔵 STEP 2: SIGNUP FORM -->
-<div id="signupScreen" class="hidden center">
-
-  <h3>Register Details</h3>
-
-  <input id="name" placeholder="Name">
-  <input id="mobile" placeholder="Mobile">
-  <input id="email" placeholder="Email">
-
-  <button id="submitBtn">Submit</button>
-
-</div>
-
-<!-- 🟢 STEP 3: HOME PAGE -->
-<div id="homePage" class="hidden">
-
-<header>
-  <h1>🛒 Smart Shopping</h1>
-</header>
-
-<div class="banner">
-  <h2>🔥 Mega Deals</h2>
-</div>
-
-<div class="card">
-  <p>Amazon</p>
-  <a href="https://amazon.in" target="_blank">Buy</a>
-</div>
-
-<div class="card">
-  <p>Flipkart</p>
-  <a href="https://flipkart.com" target="_blank">Buy</a>
-</div>
-
-</div>
-
-<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-<script src="app.js"></script>
 
 </body>
 </html>
