@@ -9,82 +9,52 @@
 
 <body>
 
-<!-- 🔴 FIRST SCREEN (Signup / Skip) -->
-<div id="authScreen" class="auth">
-  <div class="auth-box">
-    <h2>🛒 Smart Shopping</h2>
-    <p>Join or Skip to continue</p>
+<!-- 🔴 STEP 1: MAIN ENTRY -->
+<div id="entryScreen" class="center">
 
-    <input id="name" placeholder="Name">
-    <input id="mobile" placeholder="Mobile">
-    <input id="email" placeholder="Email">
+  <h2>🛒 Smart Shopping</h2>
 
-    <button id="signupBtn">Sign Up</button>
-    <button id="skipBtn" class="skip">Skip</button>
-  </div>
+  <button id="openSignup">Sign Up</button>
+  <button id="skipBtn">Skip</button>
+
 </div>
 
-<!-- 🟢 HOME PAGE -->
+<!-- 🔵 STEP 2: SIGNUP FORM -->
+<div id="signupScreen" class="hidden center">
+
+  <h3>Register Details</h3>
+
+  <input id="name" placeholder="Name">
+  <input id="mobile" placeholder="Mobile">
+  <input id="email" placeholder="Email">
+
+  <button id="submitBtn">Submit</button>
+
+</div>
+
+<!-- 🟢 STEP 3: HOME PAGE -->
 <div id="homePage" class="hidden">
 
 <header>
   <h1>🛒 Smart Shopping</h1>
-  <p>Best Deals • Cashback • Offers</p>
 </header>
 
-<!-- Banner -->
 <div class="banner">
-  <h2>🔥 Mega Shopping Festival 🔥</h2>
+  <h2>🔥 Mega Deals</h2>
 </div>
 
-<!-- Affiliate Section -->
-<h3 class="section-title">🔥 Top 10 Deals</h3>
-
-<div class="grid">
-
-  <div class="card">
-    <img src="https://via.placeholder.com/150">
-    <p>Amazon Deal</p>
-    <a href="https://amazon.in" target="_blank">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/150">
-    <p>Flipkart Deal</p>
-    <a href="https://flipkart.com" target="_blank">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/150">
-    <p>Meesho Deal</p>
-    <a href="https://meesho.com" target="_blank">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/150">
-    <p>Myntra Deal</p>
-    <a href="https://myntra.com" target="_blank">Buy Now</a>
-  </div>
-
-  <!-- 6 more dummy cards -->
-  <div class="card"><img src="https://via.placeholder.com/150"><p>Deal 5</p><a href="#">Buy Now</a></div>
-  <div class="card"><img src="https://via.placeholder.com/150"><p>Deal 6</p><a href="#">Buy Now</a></div>
-  <div class="card"><img src="https://via.placeholder.com/150"><p>Deal 7</p><a href="#">Buy Now</a></div>
-  <div class="card"><img src="https://via.placeholder.com/150"><p>Deal 8</p><a href="#">Buy Now</a></div>
-  <div class="card"><img src="https://via.placeholder.com/150"><p>Deal 9</p><a href="#">Buy Now</a></div>
-  <div class="card"><img src="https://via.placeholder.com/150"><p>Deal 10</p><a href="#">Buy Now</a></div>
-
+<div class="card">
+  <p>Amazon</p>
+  <a href="https://amazon.in" target="_blank">Buy</a>
 </div>
 
-<!-- Offers -->
-<div class="offers">
-  <h3>🔥 Best Offers</h3>
-  <p>Today’s best cashback + discounts available</p>
+<div class="card">
+  <p>Flipkart</p>
+  <a href="https://flipkart.com" target="_blank">Buy</a>
 </div>
 
 </div>
 
-<!-- Supabase -->
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script src="app.js"></script>
 
